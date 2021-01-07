@@ -37,7 +37,7 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
     vol.Required(CONF_USERNAME): cv.string,
     vol.Optional(CONF_PORT, default=DEFAULT_SSH_PORT): cv.port,
     vol.Required(CONF_COMMAND): cv.string,
-    vol.Required(CONF_UNIT_OF_MEASUREMENT): cv.string,
+    vol.Optional(CONF_UNIT_OF_MEASUREMENT): cv.string,
     vol.Optional(CONF_VALUE_TEMPLATE): cv.template,
 })
 
